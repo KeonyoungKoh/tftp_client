@@ -1,0 +1,255 @@
+[0.000000] (-) TimerEvent: {}
+[0.000357] (-) JobUnselected: {'identifier': 'update_srvcli'}
+[0.000462] (update_interface) JobQueued: {'identifier': 'update_interface', 'dependencies': OrderedDict()}
+[0.000607] (update_interface) JobStarted: {'identifier': 'update_interface'}
+[0.005983] (update_interface) JobProgress: {'identifier': 'update_interface', 'progress': 'cmake'}
+[0.006237] (update_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/barbariccia/dev_ws/src/update_interface', '-DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/update_interface'], 'cwd': '/home/barbariccia/dev_ws/build/update_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'barbariccia'), ('SSH_CLIENT', '192.168.0.1 57175 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/barbariccia/dev_ws/install/tftp_update/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/barbariccia'), ('OLDPWD', '/home/barbariccia/dev_ws/src'), ('TERM_PROGRAM_VERSION', '1.65.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1005/vscode-ipc-c293c7ba-4b3a-4884-8190-ea1f52193797.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1005/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/barbariccia/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'barbariccia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '321'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/bin/remote-cli:/home/barbariccia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1005'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1005/vscode-git-b3149d7487.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/barbariccia/dev_ws/install/update_srvcli:/home/barbariccia/dev_ws/install/tftp_update:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/barbariccia/dev_ws/build/update_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.1 57175 192.168.0.17 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/barbariccia/dev_ws/install/update_srvcli/lib/python3.8/site-packages:/home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/barbariccia/dev_ws/install/tftp_update:/home/barbariccia/dev_ws/install/update_srvcli:/opt/ros/foxy')]), 'shell': False}
+[0.052360] (update_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.098917] (update_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.099816] (-) TimerEvent: {}
+[0.104290] (update_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.157276] (update_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.158387] (update_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199922] (-) TimerEvent: {}
+[0.217409] (update_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.229409] (update_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.229838] (update_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.232625] (update_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.293647] (update_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.294647] (update_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299988] (-) TimerEvent: {}
+[0.353864] (update_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.365735] (update_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.366224] (update_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.368042] (update_interface) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.390309] (update_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.390535] (update_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.400060] (-) TimerEvent: {}
+[0.500266] (-) TimerEvent: {}
+[0.510929] (update_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.563866] (update_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.565630] (update_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.569188] (update_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.600353] (-) TimerEvent: {}
+[0.642877] (update_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.668522] (update_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.700453] (-) TimerEvent: {}
+[0.730027] (update_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.764802] (update_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.800545] (-) TimerEvent: {}
+[0.805455] (update_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[0.873639] (update_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.877219] (update_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.892321] (update_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.893242] (update_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[0.900602] (-) TimerEvent: {}
+[0.909635] (update_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.909779] (update_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.909846] (update_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[0.909902] (update_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[0.923494] (update_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[0.948892] (update_interface) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.949896] (update_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.950385] (update_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.953810] (update_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.968080] (update_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[0.969482] (update_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/barbariccia/dev_ws/build/update_interface\n'}
+[0.973048] (update_interface) CommandEnded: {'returncode': 0}
+[0.975037] (update_interface) JobProgress: {'identifier': 'update_interface', 'progress': 'build'}
+[0.975087] (update_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/barbariccia/dev_ws/build/update_interface', '--', '-j32', '-l32'], 'cwd': '/home/barbariccia/dev_ws/build/update_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'barbariccia'), ('SSH_CLIENT', '192.168.0.1 57175 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/barbariccia/dev_ws/install/tftp_update/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/barbariccia'), ('OLDPWD', '/home/barbariccia/dev_ws/src'), ('TERM_PROGRAM_VERSION', '1.65.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1005/vscode-ipc-c293c7ba-4b3a-4884-8190-ea1f52193797.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1005/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/barbariccia/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'barbariccia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '321'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/bin/remote-cli:/home/barbariccia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1005'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1005/vscode-git-b3149d7487.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/barbariccia/dev_ws/install/update_srvcli:/home/barbariccia/dev_ws/install/tftp_update:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/barbariccia/dev_ws/build/update_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.1 57175 192.168.0.17 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/barbariccia/dev_ws/install/update_srvcli/lib/python3.8/site-packages:/home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/barbariccia/dev_ws/install/tftp_update:/home/barbariccia/dev_ws/install/update_srvcli:/opt/ros/foxy')]), 'shell': False}
+[1.000688] (-) TimerEvent: {}
+[1.008006] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__cpp\x1b[0m\n'}
+[1.008951] (update_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.013909] (update_interface) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.100777] (-) TimerEvent: {}
+[1.153670] (update_interface) StdoutLine: {'line': b'[  6%] Built target update_interface__cpp\n'}
+[1.155596] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_generator_c\x1b[0m\n'}
+[1.159128] (update_interface) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.159222] (update_interface) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.160949] (update_interface) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.163468] (update_interface) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/update_interface__rosidl_generator_c.dir/rosidl_generator_c/update_interface/srv/detail/firmware_update__functions.c.o\x1b[0m\n'}
+[1.191020] (update_interface) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libupdate_interface__rosidl_generator_c.so\x1b[0m\n'}
+[1.200832] (-) TimerEvent: {}
+[1.211952] (update_interface) StdoutLine: {'line': b'[ 22%] Built target update_interface__rosidl_generator_c\n'}
+[1.217534] (update_interface) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.217784] (update_interface) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.282194] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.290076] (update_interface) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/update_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/update_interface/srv/firmware_update__type_support.cpp.o\x1b[0m\n'}
+[1.297400] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.300896] (-) TimerEvent: {}
+[1.303242] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.305094] (update_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/update_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/update_interface/srv/detail/firmware_update__type_support.cpp.o\x1b[0m\n'}
+[1.313052] (update_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/update_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/update_interface/srv/detail/dds_fastrtps/firmware_update__type_support.cpp.o\x1b[0m\n'}
+[1.341469] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_c\x1b[0m\n'}
+[1.348283] (update_interface) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/update_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/update_interface/srv/firmware_update__type_support.cpp.o\x1b[0m\n'}
+[1.352302] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.359676] (update_interface) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/update_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/update_interface/srv/detail/firmware_update__type_support.c.o\x1b[0m\n'}
+[1.367375] (update_interface) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libupdate_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.380160] (update_interface) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libupdate_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.388332] (update_interface) StdoutLine: {'line': b'[ 51%] Built target update_interface__rosidl_typesupport_c\n'}
+[1.397599] (update_interface) StdoutLine: {'line': b'[ 51%] Built target update_interface__rosidl_typesupport_introspection_c\n'}
+[1.400962] (-) TimerEvent: {}
+[1.457040] (update_interface) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libupdate_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.476216] (update_interface) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libupdate_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.481320] (update_interface) StdoutLine: {'line': b'[ 58%] Built target update_interface__rosidl_typesupport_cpp\n'}
+[1.501044] (-) TimerEvent: {}
+[1.511402] (update_interface) StdoutLine: {'line': b'[ 58%] Built target update_interface__rosidl_typesupport_introspection_cpp\n'}
+[1.558820] (update_interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libupdate_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.601144] (-) TimerEvent: {}
+[1.613288] (update_interface) StdoutLine: {'line': b'[ 61%] Built target update_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[1.620722] (update_interface) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.701245] (-) TimerEvent: {}
+[1.766364] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.777213] (update_interface) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/update_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/update_interface/srv/detail/firmware_update__type_support_c.cpp.o\x1b[0m\n'}
+[1.801321] (-) TimerEvent: {}
+[1.901534] (-) TimerEvent: {}
+[2.001779] (-) TimerEvent: {}
+[2.005998] (update_interface) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libupdate_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.055441] (update_interface) StdoutLine: {'line': b'[ 70%] Built target update_interface__rosidl_typesupport_fastrtps_c\n'}
+[2.063540] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface\x1b[0m\n'}
+[2.072797] (update_interface) StdoutLine: {'line': b'[ 70%] Built target update_interface\n'}
+[2.081612] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__py\x1b[0m\n'}
+[2.090579] (update_interface) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.101850] (-) TimerEvent: {}
+[2.202069] (-) TimerEvent: {}
+[2.302234] (-) TimerEvent: {}
+[2.345485] (update_interface) StdoutLine: {'line': b'[ 74%] Built target update_interface__py\n'}
+[2.354181] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__python\x1b[0m\n'}
+[2.370454] (update_interface) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/update_interface__python.dir/rosidl_generator_py/update_interface/srv/_firmware_update_s.c.o\x1b[0m\n'}
+[2.402308] (-) TimerEvent: {}
+[2.431432] (update_interface) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/update_interface/libupdate_interface__python.so\x1b[0m\n'}
+[2.461362] (update_interface) StdoutLine: {'line': b'[ 80%] Built target update_interface__python\n'}
+[2.468534] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.469078] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.470438] (update_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target update_interface__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.480473] (update_interface) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/update_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/update_interface/_update_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.480630] (update_interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/update_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/update_interface/_update_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.482035] (update_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/update_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/update_interface/_update_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.502388] (-) TimerEvent: {}
+[2.535702] (update_interface) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/update_interface/update_interface_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.536722] (update_interface) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/update_interface/update_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.537192] (update_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/update_interface/update_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.561734] (update_interface) StdoutLine: {'line': b'[100%] Built target update_interface__rosidl_typesupport_c__pyext\n'}
+[2.562528] (update_interface) StdoutLine: {'line': b'[100%] Built target update_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[2.582449] (update_interface) StdoutLine: {'line': b'[100%] Built target update_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.590193] (update_interface) CommandEnded: {'returncode': 0}
+[2.602497] (-) TimerEvent: {}
+[2.626576] (update_interface) JobProgress: {'identifier': 'update_interface', 'progress': 'install'}
+[2.633599] (update_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/barbariccia/dev_ws/build/update_interface'], 'cwd': '/home/barbariccia/dev_ws/build/update_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'barbariccia'), ('SSH_CLIENT', '192.168.0.1 57175 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/barbariccia/dev_ws/install/tftp_update/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/barbariccia'), ('OLDPWD', '/home/barbariccia/dev_ws/src'), ('TERM_PROGRAM_VERSION', '1.65.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1005/vscode-ipc-c293c7ba-4b3a-4884-8190-ea1f52193797.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1005/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/barbariccia/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'barbariccia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '321'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/barbariccia/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/bin/remote-cli:/home/barbariccia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1005'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1005/vscode-git-b3149d7487.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/barbariccia/dev_ws/install/update_srvcli:/home/barbariccia/dev_ws/install/tftp_update:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/barbariccia/dev_ws/build/update_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.1 57175 192.168.0.17 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/barbariccia/dev_ws/install/update_srvcli/lib/python3.8/site-packages:/home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/barbariccia/dev_ws/install/tftp_update:/home/barbariccia/dev_ws/install/update_srvcli:/opt/ros/foxy')]), 'shell': False}
+[2.638749] (update_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.638910] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/ament_index/resource_index/rosidl_interfaces/update_interface\n'}
+[2.639040] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface\n'}
+[2.639200] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg\n'}
+[2.639322] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.639435] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv\n'}
+[2.639533] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/firmware_update.h\n'}
+[2.639634] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail\n'}
+[2.639715] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__functions.c\n'}
+[2.639810] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__functions.h\n'}
+[2.639892] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__type_support.h\n'}
+[2.639996] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__struct.h\n'}
+[2.640145] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/library_path.sh\n'}
+[2.640245] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/library_path.dsv\n'}
+[2.640330] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_generator_c.so\n'}
+[2.640412] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_generator_c.so" to ""\n'}
+[2.640517] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface\n'}
+[2.640650] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg\n'}
+[2.640782] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.640896] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv\n'}
+[2.640982] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail\n'}
+[2.641116] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__rosidl_typesupport_fastrtps_c.h\n'}
+[2.641227] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[2.641326] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.641424] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface\n'}
+[2.641506] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg\n'}
+[2.641598] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.641693] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv\n'}
+[2.641776] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail\n'}
+[2.641981] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/dds_fastrtps\n'}
+[2.642139] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.642290] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.642389] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.642505] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface\n'}
+[2.642596] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg\n'}
+[2.642708] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.642797] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv\n'}
+[2.642907] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail\n'}
+[2.643009] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__rosidl_typesupport_introspection_c.h\n'}
+[2.643106] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__type_support.c\n'}
+[2.643200] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_introspection_c.so\n'}
+[2.643283] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.643371] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_c.so\n'}
+[2.643450] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_c.so" to ""\n'}
+[2.643534] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface\n'}
+[2.643614] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv\n'}
+[2.643693] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail\n'}
+[2.643774] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__builder.hpp\n'}
+[2.643852] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__struct.hpp\n'}
+[2.643929] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__traits.hpp\n'}
+[2.644004] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/firmware_update.hpp\n'}
+[2.644080] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface\n'}
+[2.644157] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv\n'}
+[2.644233] (update_interface) StdoutLine: {'line': b'-- Up-to-date: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail\n'}
+[2.644305] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__type_support.cpp\n'}
+[2.644379] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/include/update_interface/srv/detail/firmware_update__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.644455] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[2.644531] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.644608] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_cpp.so\n'}
+[2.644686] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[2.644781] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/pythonpath.sh\n'}
+[2.644868] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/pythonpath.dsv\n'}
+[2.644945] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/__init__.py\n'}
+[2.664680] (update_interface) StdoutLine: {'line': b"Compiling '/home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/__init__.py'...\n"}
+[2.666704] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/srv\n'}
+[2.666779] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/srv/__init__.py\n'}
+[2.666844] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/srv/_firmware_update_s.c\n'}
+[2.666911] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/srv/_firmware_update.py\n'}
+[2.667151] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/update_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[2.667511] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/update_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[2.667697] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/update_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[2.668052] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/update_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[2.668266] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/update_interface_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[2.668665] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/python3.8/site-packages/update_interface/update_interface_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[2.668780] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__python.so\n'}
+[2.669050] (update_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/barbariccia/dev_ws/install/update_interface/lib/libupdate_interface__python.so" to ""\n'}
+[2.669144] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/srv/FirmwareUpdate.idl\n'}
+[2.669253] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/srv/FirmwareUpdate.srv\n'}
+[2.669358] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/srv/FirmwareUpdate_Request.msg\n'}
+[2.669464] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/srv/FirmwareUpdate_Response.msg\n'}
+[2.669608] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/ament_index/resource_index/package_run_dependencies/update_interface\n'}
+[2.669752] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/ament_index/resource_index/parent_prefix_path/update_interface\n'}
+[2.669866] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/ament_prefix_path.sh\n'}
+[2.669978] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/ament_prefix_path.dsv\n'}
+[2.670086] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/path.sh\n'}
+[2.670191] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/environment/path.dsv\n'}
+[2.670298] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/local_setup.bash\n'}
+[2.670406] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/local_setup.sh\n'}
+[2.670507] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/local_setup.zsh\n'}
+[2.670610] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/local_setup.dsv\n'}
+[2.670714] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/package.dsv\n'}
+[2.670847] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/ament_index/resource_index/packages/update_interface\n'}
+[2.671017] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_generator_cExport.cmake\n'}
+[2.671130] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.671294] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.671411] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.671573] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_cExport.cmake\n'}
+[2.671684] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.671831] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_generator_cppExport.cmake\n'}
+[2.671989] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.672103] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.672263] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_cppExport.cmake\n'}
+[2.672371] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.672481] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[2.672593] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.672700] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.672829] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.672939] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.673066] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.673196] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.673327] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interfaceConfig.cmake\n'}
+[2.673415] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/cmake/update_interfaceConfig-version.cmake\n'}
+[2.673540] (update_interface) StdoutLine: {'line': b'-- Installing: /home/barbariccia/dev_ws/install/update_interface/share/update_interface/package.xml\n'}
+[2.676024] (update_interface) CommandEnded: {'returncode': 0}
+[2.702587] (-) TimerEvent: {}
+[2.734439] (update_interface) JobEnded: {'identifier': 'update_interface', 'rc': 0}
+[2.734855] (-) EventReactorShutdown: {}

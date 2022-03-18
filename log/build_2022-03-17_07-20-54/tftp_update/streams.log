@@ -1,0 +1,57 @@
+[0.007s] Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update
+[0.019s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.035s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.134s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.173s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.174s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.177s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.288s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.320s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.425s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[0.425s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.425s]   tftp_update --arguments-file
+[0.426s]   /home/barbariccia/dev_ws/build/tftp_update/rosidl_adapter__arguments__tftp_update.json
+[0.426s]   --output-dir
+[0.426s]   /home/barbariccia/dev_ws/build/tftp_update/rosidl_adapter/tftp_update
+[0.426s]   --output-file
+[0.426s]   /home/barbariccia/dev_ws/build/tftp_update/rosidl_adapter/tftp_update.idls)
+[0.426s]   returned error code 1:
+[0.426s] 
+[0.426s]   Error processing 'str host' of 'tftp_update/FirmwareUpdate_Request': ''str'
+[0.426s]   is an invalid message name.  It should have the pattern
+[0.426s]   '^[A-Z][A-Za-z0-9]*$''
+[0.426s] 
+[0.426s]   Traceback (most recent call last):
+[0.427s] 
+[0.427s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[0.427s]       return _run_code(code, main_globals, None,
+[0.427s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[0.427s]       exec(code, run_globals)
+[0.427s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.427s]       sys.exit(main())
+[0.427s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.427s]       abs_idl_file = convert_to_idl(
+[0.427s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[0.427s]       return convert_srv_to_idl(
+[0.427s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[0.427s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 852, in parse_service_string
+[0.428s]       request_message = parse_message_string(
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[0.428s]       Type(type_string, context_package_name=pkg_name),
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__
+[0.428s]       super(Type, self).__init__(
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[0.428s]       raise InvalidResourceName(
+[0.428s] 
+[0.428s]   rosidl_adapter.parser.InvalidResourceName: 'str' is an invalid message
+[0.428s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.428s] 
+[0.428s] Call Stack (most recent call first):
+[0.429s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.429s]   CMakeLists.txt:37 (rosidl_generate_interfaces)
+[0.429s] 
+[0.429s] 
+[0.429s] -- Configuring incomplete, errors occurred!
+[0.429s] See also "/home/barbariccia/dev_ws/build/tftp_update/CMakeFiles/CMakeOutput.log".
+[0.431s] Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update

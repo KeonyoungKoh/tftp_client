@@ -1,0 +1,4 @@
+srv/FirmwareUpdate.idl
+srv/FirmwareUpdate.srv
+srv/FirmwareUpdate_Request.msg
+srv/FirmwareUpdate_Response.msg

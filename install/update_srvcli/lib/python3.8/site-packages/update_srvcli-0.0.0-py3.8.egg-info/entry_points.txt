@@ -1,0 +1,4 @@
+[console_scripts]
+client = update_srvcli.tftp_update_client_test:main
+service = update_srvcli.tftp_update_service:main
+

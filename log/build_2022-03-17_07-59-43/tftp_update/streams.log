@@ -1,0 +1,35 @@
+[0.008s] Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32
+[0.031s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.049s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.049s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.157s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.193s] Error parsing '/home/barbariccia/dev_ws/src/tftp_update/package.xml':
+[0.254s] Traceback (most recent call last):
+[0.255s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[0.255s]     main()
+[0.255s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[0.255s]     raise e
+[0.255s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[0.255s]     package = parse_package_string(
+[0.255s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 774, in parse_package_string
+[0.255s]     pkg.validate(warnings=warnings)
+[0.255s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 317, in validate
+[0.255s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[0.255s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/barbariccia/dev_ws/src/tftp_update/package.xml':
+[0.255s] The package "tftp_update" must not "exec_depend" on a package with the same name as this package
+[0.264s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[0.264s]   execute_process(/usr/bin/python3
+[0.264s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.264s]   /home/barbariccia/dev_ws/src/tftp_update/package.xml
+[0.264s]   /home/barbariccia/dev_ws/build/tftp_update/ament_cmake_core/package.cmake)
+[0.264s]   returned error code 1
+[0.265s] Call Stack (most recent call first):
+[0.265s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.265s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.265s]   CMakeLists.txt:32 (ament_lint_auto_find_test_dependencies)
+[0.265s] 
+[0.265s] 
+[0.265s] -- Configuring incomplete, errors occurred!
+[0.265s] See also "/home/barbariccia/dev_ws/build/tftp_update/CMakeFiles/CMakeOutput.log".
+[0.266s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[0.268s] Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '2': /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32

@@ -1,0 +1,2 @@
+Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32
+Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '2': /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32

@@ -1,0 +1,203 @@
+[0.007s] Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update
+[0.018s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.036s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.036s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.144s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.182s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.184s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.187s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.289s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.319s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.363s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.448s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.452s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.469s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[0.471s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[0.494s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[0.494s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.494s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[0.494s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[0.514s] -- Found PythonExtra: .so  
+[0.547s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.548s] -- Added test 'lint_cmake' to check CMake code style
+[0.548s] -- Added test 'xmllint' to check XML markup files
+[0.552s] -- Configuring done
+[0.567s] -- Generating done
+[0.568s] -- Build files have been written to: /home/barbariccia/dev_ws/build/tftp_update
+[0.573s] Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update
+[0.576s] Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32
+[0.608s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.608s] [35m[1mScanning dependencies of target tftp_update__cpp[0m
+[0.615s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.752s] [35m[1mScanning dependencies of target tftp_update__rosidl_generator_c[0m
+[0.757s] [  6%] Built target tftp_update__cpp
+[0.759s] [  9%] [32mBuilding C object CMakeFiles/tftp_update__rosidl_generator_c.dir/rosidl_generator_c/tftp_update/srv/detail/firmware_update__functions.c.o[0m
+[0.763s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.763s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.766s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.789s] [ 22%] [32m[1mLinking C shared library libtftp_update__rosidl_generator_c.so[0m
+[0.812s] [ 22%] Built target tftp_update__rosidl_generator_c
+[0.818s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.818s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.890s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_cpp[0m
+[0.897s] [ 32%] [32mBuilding CXX object CMakeFiles/tftp_update__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tftp_update/srv/firmware_update__type_support.cpp.o[0m
+[0.898s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_introspection_cpp[0m
+[0.905s] [ 35%] [32mBuilding CXX object CMakeFiles/tftp_update__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tftp_update/srv/detail/firmware_update__type_support.cpp.o[0m
+[0.909s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_fastrtps_cpp[0m
+[0.920s] [ 38%] [32mBuilding CXX object CMakeFiles/tftp_update__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tftp_update/srv/detail/dds_fastrtps/firmware_update__type_support.cpp.o[0m
+[0.940s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_c[0m
+[0.947s] [ 41%] [32mBuilding CXX object CMakeFiles/tftp_update__rosidl_typesupport_c.dir/rosidl_typesupport_c/tftp_update/srv/firmware_update__type_support.cpp.o[0m
+[0.956s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_introspection_c[0m
+[0.963s] [ 45%] [32mBuilding C object CMakeFiles/tftp_update__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tftp_update/srv/detail/firmware_update__type_support.c.o[0m
+[0.964s] [ 48%] [32m[1mLinking CXX shared library libtftp_update__rosidl_typesupport_c.so[0m
+[0.984s] [ 51%] [32m[1mLinking C shared library libtftp_update__rosidl_typesupport_introspection_c.so[0m
+[0.989s] [ 51%] Built target tftp_update__rosidl_typesupport_c
+[1.001s] [ 51%] Built target tftp_update__rosidl_typesupport_introspection_c
+[1.066s] [ 54%] [32m[1mLinking CXX shared library libtftp_update__rosidl_typesupport_cpp.so[0m
+[1.074s] [ 58%] [32m[1mLinking CXX shared library libtftp_update__rosidl_typesupport_introspection_cpp.so[0m
+[1.091s] [ 58%] Built target tftp_update__rosidl_typesupport_cpp
+[1.110s] [ 58%] Built target tftp_update__rosidl_typesupport_introspection_cpp
+[1.174s] [ 61%] [32m[1mLinking CXX shared library libtftp_update__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.221s] [ 61%] Built target tftp_update__rosidl_typesupport_fastrtps_cpp
+[1.228s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.365s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_fastrtps_c[0m
+[1.377s] [ 67%] [32mBuilding CXX object CMakeFiles/tftp_update__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tftp_update/srv/detail/firmware_update__type_support_c.cpp.o[0m
+[1.576s] [ 70%] [32m[1mLinking CXX shared library libtftp_update__rosidl_typesupport_fastrtps_c.so[0m
+[1.622s] [ 70%] Built target tftp_update__rosidl_typesupport_fastrtps_c
+[1.629s] [35m[1mScanning dependencies of target tftp_update[0m
+[1.636s] [ 70%] Built target tftp_update
+[1.645s] [35m[1mScanning dependencies of target tftp_update__py[0m
+[1.654s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.961s] [ 74%] Built target tftp_update__py
+[1.968s] [35m[1mScanning dependencies of target tftp_update__python[0m
+[1.981s] [ 77%] [32mBuilding C object CMakeFiles/tftp_update__python.dir/rosidl_generator_py/tftp_update/srv/_firmware_update_s.c.o[0m
+[2.042s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/tftp_update/libtftp_update__python.so[0m
+[2.077s] [ 80%] Built target tftp_update__python
+[2.086s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_c__pyext[0m
+[2.086s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_introspection_c__pyext[0m
+[2.086s] [35m[1mScanning dependencies of target tftp_update__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.097s] [ 83%] [32mBuilding C object CMakeFiles/tftp_update__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tftp_update/_tftp_update_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.098s] [ 87%] [32mBuilding C object CMakeFiles/tftp_update__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tftp_update/_tftp_update_s.ep.rosidl_typesupport_c.c.o[0m
+[2.099s] [ 90%] [32mBuilding C object CMakeFiles/tftp_update__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tftp_update/_tftp_update_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.151s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/tftp_update/tftp_update_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.152s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/tftp_update/tftp_update_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.153s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/tftp_update/tftp_update_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.178s] [100%] Built target tftp_update__rosidl_typesupport_introspection_c__pyext
+[2.179s] [100%] Built target tftp_update__rosidl_typesupport_c__pyext
+[2.196s] [100%] Built target tftp_update__rosidl_typesupport_fastrtps_c__pyext
+[2.206s] Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32
+[2.253s] Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/barbariccia/dev_ws/build/tftp_update
+[2.262s] -- Install configuration: ""
+[2.262s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/ament_index/resource_index/rosidl_interfaces/tftp_update
+[2.262s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update
+[2.262s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg/rosidl_generator_c__visibility_control.h
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/firmware_update.h
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__functions.c
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__functions.h
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__type_support.h
+[2.263s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__struct.h
+[2.264s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/library_path.sh
+[2.264s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/library_path.dsv
+[2.264s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_generator_c.so
+[2.264s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_generator_c.so" to ""
+[2.264s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update
+[2.264s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg
+[2.264s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.264s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv
+[2.264s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail
+[2.264s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__rosidl_typesupport_fastrtps_c.h
+[2.264s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_fastrtps_c.so
+[2.264s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_fastrtps_c.so" to ""
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg
+[2.265s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail
+[2.265s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/dds_fastrtps
+[2.265s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__rosidl_typesupport_fastrtps_cpp.hpp
+[2.265s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_fastrtps_cpp.so
+[2.265s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg
+[2.265s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv
+[2.265s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail
+[2.265s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__rosidl_typesupport_introspection_c.h
+[2.265s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__type_support.c
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_introspection_c.so
+[2.266s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_introspection_c.so" to ""
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_c.so
+[2.266s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_c.so" to ""
+[2.266s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update
+[2.266s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv
+[2.266s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__builder.hpp
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__struct.hpp
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__traits.hpp
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/firmware_update.hpp
+[2.266s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update
+[2.266s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv
+[2.266s] -- Up-to-date: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__type_support.cpp
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/include/tftp_update/srv/detail/firmware_update__rosidl_typesupport_introspection_cpp.hpp
+[2.266s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_introspection_cpp.so
+[2.267s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_introspection_cpp.so" to ""
+[2.267s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_cpp.so
+[2.267s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__rosidl_typesupport_cpp.so" to ""
+[2.267s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/pythonpath.sh
+[2.267s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/pythonpath.dsv
+[2.267s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/__init__.py
+[2.287s] Compiling '/home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/__init__.py'...
+[2.289s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/srv
+[2.289s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/srv/__init__.py
+[2.289s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/srv/_firmware_update_s.c
+[2.289s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/srv/_firmware_update.py
+[2.289s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/tftp_update_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[2.289s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/tftp_update_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.289s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/tftp_update_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[2.290s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/tftp_update_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.290s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/tftp_update_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[2.290s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/python3.8/site-packages/tftp_update/tftp_update_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.290s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__python.so
+[2.290s] -- Set runtime path of "/home/barbariccia/dev_ws/install/tftp_update/lib/libtftp_update__python.so" to ""
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/srv/FirmwareUpdate.idl
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/srv/FirmwareUpdate.srv
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/srv/FirmwareUpdate_Request.msg
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/srv/FirmwareUpdate_Response.msg
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/ament_index/resource_index/package_run_dependencies/tftp_update
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/ament_index/resource_index/parent_prefix_path/tftp_update
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/ament_prefix_path.sh
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/ament_prefix_path.dsv
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/path.sh
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/environment/path.dsv
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/local_setup.bash
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/local_setup.sh
+[2.291s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/local_setup.zsh
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/local_setup.dsv
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/package.dsv
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/ament_index/resource_index/packages/tftp_update
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_generator_cExport.cmake
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_generator_cExport-noconfig.cmake
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_introspection_cExport.cmake
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_cExport.cmake
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_cExport-noconfig.cmake
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_generator_cppExport.cmake
+[2.292s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_introspection_cppExport.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_cppExport.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_update__rosidl_typesupport_cppExport-noconfig.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/rosidl_cmake-extras.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/ament_cmake_export_libraries-extras.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/ament_cmake_export_targets-extras.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_updateConfig.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/cmake/tftp_updateConfig-version.cmake
+[2.293s] -- Installing: /home/barbariccia/dev_ws/install/tftp_update/share/tftp_update/package.xml
+[2.296s] Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/barbariccia/dev_ws/build/tftp_update

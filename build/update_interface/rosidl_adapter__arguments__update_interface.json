@@ -1,0 +1,6 @@
+{
+  "package_name": "update_interface",
+  "non_idl_tuples": [
+    "/home/barbariccia/dev_ws/src/update_interface:srv/FirmwareUpdate.srv"
+  ]
+}

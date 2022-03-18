@@ -1,0 +1,2 @@
+Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update
+Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update

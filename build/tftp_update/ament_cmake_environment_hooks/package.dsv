@@ -1,0 +1,4 @@
+source;share/tftp_update/local_setup.bash
+source;share/tftp_update/local_setup.dsv
+source;share/tftp_update/local_setup.sh
+source;share/tftp_update/local_setup.zsh

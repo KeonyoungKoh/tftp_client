@@ -1,0 +1,19 @@
+[0.007s] Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update
+[0.022s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.039s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.144s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.186s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.187s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.191s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.297s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.311s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.311s]   rosidl_generate_interfaces() the passed file 'msg/Num.msg' doesn't exist
+[0.311s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.311s]   '/home/barbariccia/dev_ws/src/tftp_update'
+[0.311s] Call Stack (most recent call first):
+[0.311s]   CMakeLists.txt:37 (rosidl_generate_interfaces)
+[0.311s] 
+[0.311s] 
+[0.311s] -- Configuring incomplete, errors occurred!
+[0.311s] See also "/home/barbariccia/dev_ws/build/tftp_update/CMakeFiles/CMakeOutput.log".
+[0.314s] Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update

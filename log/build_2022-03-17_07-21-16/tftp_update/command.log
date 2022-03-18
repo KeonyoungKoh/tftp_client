@@ -1,0 +1,6 @@
+Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update
+Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/barbariccia/dev_ws/src/tftp_update -DCMAKE_INSTALL_PREFIX=/home/barbariccia/dev_ws/install/tftp_update
+Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32
+Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/barbariccia/dev_ws/build/tftp_update -- -j32 -l32
+Invoking command in '/home/barbariccia/dev_ws/build/tftp_update': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/barbariccia/dev_ws/build/tftp_update
+Invoked command in '/home/barbariccia/dev_ws/build/tftp_update' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/barbariccia/dev_ws/build/tftp_update
