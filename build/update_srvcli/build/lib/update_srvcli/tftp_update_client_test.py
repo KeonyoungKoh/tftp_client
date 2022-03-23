@@ -1,36 +1,9 @@
 from tftp_update.srv import FirmwareUpdate
-import zlib
-import struct
 
-import sys
+# import sys
 import rclpy
 from rclpy.node import Node
 
-def crc32():
-    
-    open_file_name = input('enter file name : ')
-
-    with open(open_file_name, "rb") as f:
-        data = f.read()
-    f.close()
-        
-    result = zlib.crc32(data) & 0xffffffff
-
-    newresult = struct.pack('<I', result)
-
-    send_file_name = input('enter new file name : ')
-
-    with open(send_file_name, "ab") as f2:
-        for i in range(128):
-            f2.write(newresult)
-        f2.write(data)
-    f2.close()
-
-    with open(send_file_name, "rb") as f3:
-        newdata = f3.read()
-    f3.close()
-    
-    return send_file_name
 
 class UpdateClientTest(Node):
     def __init__(self):
@@ -45,7 +18,25 @@ class UpdateClientTest(Node):
     def send_request(self):
         self.req.will_update = 1
         self.req.host = '192.168.0.181'
-        self.req.filename = crc32()
+        self.req.filename = input("Select software version : ")
+        
+        print("\n\n\n\n\n\n")
+        print(" __ __  ____  ___     ____  ______  ____  ____    ____       _____  ___   _____  ______  __    __   ____  ____     ___             ")
+        print("|  |  ||    \|   \   /    ||      ||    ||    \  /    |     / ___/ /   \ |     ||      ||  |__|  | /    ||    \   /  _]            ")
+        print("|  |  ||  o  )    \ |  o  ||      | |  | |  _  ||   __|    (   \_ |     ||   __||      ||  |  |  ||  o  ||  D  ) /  [_             ")
+        print("|  |  ||   _/|  D  ||     ||_|  |_| |  | |  |  ||  |  |     \__  ||  O  ||  |_  |_|  |_||  |  |  ||     ||    / |    _]            ")
+        print("|  :  ||  |  |     ||  _  |  |  |   |  | |  |  ||  |_ |     /  \ ||     ||   _]   |  |  |  `  '  ||  _  ||    \ |   [_   __  __  __ ")
+        print("|     ||  |  |     ||  |  |  |  |   |  | |  |  ||     |     \    ||     ||  |     |  |   \      / |  |  ||  .  \|     | |  ||  ||  |")
+        print(" \__,_||__|  |_____||__|__|  |__|  |____||__|__||___,_|      \___| \___/ |__|     |__|    \_/\_/  |__|__||__|\_||_____| |__||__||__|")
+        print("                                                                                                                                   ")
+        print(" ____  _        ___   ____  _____   ___      __    __   ____  ____  ______                                                         ")
+        print("|    \| |      /  _] /    |/ ___/  /  _]    |  |__|  | /    ||    ||      |                                                        ")
+        print("|  o  ) |     /  [_ |  o  (   \_  /  [_     |  |  |  ||  o  | |  | |      |                                                        ")
+        print("|   _/| |___ |    _]|     |\__  ||    _]    |  |  |  ||     | |  | |_|  |_|                                                        ")
+        print("|  |  |     ||   [_ |  _  |/  \ ||   [_     |  `  '  ||  _  | |  |   |  |  __  __  __                                               ")
+        print("|  |  |     ||     ||  |  |\    ||     |     \      / |  |  | |  |   |  | |  ||  ||  |                                              ")
+        print("|__|  |_____||_____||__|__| \___||_____|      \_/\_/  |__|__||____|  |__| |__||__||__|   ")
+        print("\n");
         self.future = self.cli.call_async(self.req)
         
 def main(args = None):
@@ -62,7 +53,37 @@ def main(args = None):
             except Exception as e:
                 update_client_test.get_logger().info('Service call failed %r' % (e,))
             else:
-                update_client_test.get_logger().info('Update result : %d' % (response.success))
+                # update_client_test.get_logger().info('Update result : %d' % (response.success))
+                # put success / failure graphic here
+                if response.success:
+                    print("\n\n\n\n")
+                    print(" __  __      __ __  ____  ___     ____  ______    ___         __   ___   ___ ___  ____  _        ___ ______    ___      __  __")
+                    print("|  ||  |    |  |  ||    \|   \   /    ||      |  /  _]       /  ] /   \ |   |   ||    \| |      /  _]      |  /  _]    |  ||  |")
+                    print("|  ||  |    |  |  ||  o  )    \ |  o  ||      | /  [_       /  / |     || _   _ ||  o  ) |     /  [_|      | /  [_     |  ||  |")
+                    print("|__||__|    |  |  ||   _/|  D  ||     ||_|  |_||    _]     /  /  |  O  ||  \_/  ||   _/| |___ |    _]_|  |_||    _]    |__||__|")
+                    print(" __  __     |  :  ||  |  |     ||  _  |  |  |  |   [_     /   \_ |     ||   |   ||  |  |     ||   [_  |  |  |   [_      __  __ ")
+                    print("|  ||  |    |     ||  |  |     ||  |  |  |  |  |     |    \     ||     ||   |   ||  |  |     ||     | |  |  |     |    |  ||  |")
+                    print("|__||__|     \__,_||__|  |_____||__|__|  |__|  |_____|     \____| \___/ |___|___||__|  |_____||_____| |__|  |_____|    |__||__|")
+                    print("\n\n\n\n")
+                    
+                else: 
+                    print("\n\n\n\n")
+                    print(" __ __  ____  ___     ____  ______    ___      _____   ____  ____  _        ___  ___           ")
+                    print("|  |  ||    \|   \   /    ||      |  /  _]    |     | /    ||    || |      /  _]|   \          ")
+                    print("|  |  ||  o  )    \ |  o  ||      | /  [_     |   __||  o  | |  | | |     /  [_ |    \         ")
+                    print("|  |  ||   _/|  D  ||     ||_|  |_||    _]    |  |_  |     | |  | | |___ |    _]|  D  |        ")
+                    print("|  :  ||  |  |     ||  _  |  |  |  |   [_     |   _] |  _  | |  | |     ||   [_ |     | __  __ ")
+                    print("|     ||  |  |     ||  |  |  |  |  |     |    |  |   |  |  | |  | |     ||     ||     ||  ||  |")
+                    print(" \__,_||__|  |_____||__|__|  |__|  |_____|    |__|   |__|__||____||_____||_____||_____||__||__|")
+                    print("                                                                                               ")
+                    print(" ____  _        ___   ____  _____   ___      ____     ___ ______  ____   __ __         ")
+                    print("|    \| |      /  _] /    |/ ___/  /  _]    |    \   /  _]      ||    \ |  |  |        ")
+                    print("|  o  ) |     /  [_ |  o  (   \_  /  [_     |  D  ) /  [_|      ||  D  )|  |  |        ")
+                    print("|   _/| |___ |    _]|     |\__  ||    _]    |    / |    _]_|  |_||    / |  ~  |        ")
+                    print("|  |  |     ||   [_ |  _  |/  \ ||   [_     |    \ |   [_  |  |  |    \ |___, |        ")
+                    print("|  |  |     ||     ||  |  |\    ||     |    |  .  \|     | |  |  |  .  \|     |        ")
+                    print("|__|  |_____||_____||__|__| \___||_____|    |__|\_||_____| |__|  |__|\_||____/         ")
+                    print("\n\n")
             break
         
     update_client_test.destroy_node()
