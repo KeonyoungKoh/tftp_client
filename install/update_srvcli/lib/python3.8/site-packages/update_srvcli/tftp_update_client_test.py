@@ -16,7 +16,7 @@ class UpdateClientTest(Node):
         
         
     def send_request(self):
-        self.req.will_update = 1
+        self.req.will_update = 0
         self.req.host = '192.168.0.181'
         self.req.filename = input("Select software version : ")
         
@@ -37,7 +37,16 @@ class UpdateClientTest(Node):
         print("|  |  |     ||     ||  |  |\    ||     |     \      / |  |  | |  |   |  | |  ||  ||  |                                              ")
         print("|__|  |_____||_____||__|__| \___||_____|      \_/\_/  |__|__||____|  |__| |__||__||__|   ")
         print("\n");
+        # self.get_logger().info("Updating software.. please wait..")
         self.future = self.cli.call_async(self.req)
+        # response = self.cli.call_async(self.req).result
+        # print("Current version : %d\n" % response.success)
+        
+        # self.req.will_update = 1
+        # self.req.host = '192.168.0.181'
+        # self.req.filename = input("Select software version : ")
+        
+        # self.get_logger().info("Updating software.. please wait.. ")
         
 def main(args = None):
     rclpy.init(args = args)
